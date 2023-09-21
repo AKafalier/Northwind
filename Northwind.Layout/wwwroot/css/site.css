@@ -1,0 +1,16 @@
+.card-header {
+    background-color: #6c757d;
+}
+.card-body {
+    background-color: #6c757d;
+}
+.card {
+
+    --bs-card-border-color: #000;
+}
+.table > :not(caption) > * > * {
+    background-color: #6c757d;
+}
+body {
+    background-color: #212529;
+}

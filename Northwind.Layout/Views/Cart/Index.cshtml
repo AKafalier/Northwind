@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-9">
+                    <table class="table table-hover" id="cartTable">
+                        <thead>
+                            <tr>
+
+                                <th>Product Name</th>
+                                <th>UnitPrice</th>
+                                <th>Quantity</th>
+                                <th>sub Total</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartTableBody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h1>Total Price</h1>
+                    <h1 id="totalPrice"></h1>
+                    <button id="complete" class="btn btn-light">Complete Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script src="/js/cart.js"></script>
+}
